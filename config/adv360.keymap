@@ -76,11 +76,11 @@
 
         keypad {
             bindings = <
-&kp EQUAL     &kp N1  &kp N2                &kp N3                 &kp N4     &kp N5  &kp LEFT_PARENTHESIS                                                         &kp RIGHT_PARENTHESIS  &kp N6  &kp KP_CLEAR  &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp MINUS
-&kp TAB       &kp Q   &kp W                 &kp E                  &kp R      &kp T   &none                                                                        &none                  &kp Y   &kp KP_N7     &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp BSLH
-&lt 1 ESCAPE  &kp A   &kp S                 &kp D                  &kp F      &kp G   &kp MINUS             &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &kp EQUAL              &kp H   &kp KP_N4     &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &kp SQT
-&kp LSHFT     &kp Z   &kp X                 &kp C                  &kp V      &kp B                                        &kp HOME      &kp PG_UP                                        &kp N   &kp KP_N1     &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-&mo 1         &tog 2  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT          &kp SPACE             &kp BACKSPACE  &kp END       &kp PG_DN      &kp ENTER  &kp KP_N0                      &kp LEFT      &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &mo 3
+&mt TILDE GRAVE  &kp N1        &kp N2                &kp N3                 &kp N4  &kp N5  &kp F11                                                                             &kp F12                        &kp N6  &kp KP_CLEAR     &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp MINUS
+&kp TAB          &kp Q         &kp W                 &kp E                  &kp R   &kp T   &mt LEFT_BRACE LEFT_BRACKET                                                         &mt RIGHT_BRACE RIGHT_BRACKET  &kp Y   &kp KP_N7        &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp BSLH
+&lt 1 ESCAPE     &kp A         &kp S                 &kp D                  &kp F   &kp G   &kp MINUS                    &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &kp EQUAL                      &kp H   &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &kp SQT
+&kp LSHFT        &kp Z         &kp X                 &kp C                  &kp V   &kp B                                               &kp HOME      &kp PG_UP                                                &kp N   &kp KP_N1        &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &kp RSHFT
+&mo 1            &kp LEFT_WIN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &tog 2          &kp SPACE                    &kp BACKSPACE  &kp END       &kp PG_DN      &kp ENTER  &kp SPACE                              &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &mo 3
             >;
         };
 
