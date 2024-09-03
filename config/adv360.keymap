@@ -46,6 +46,17 @@
             quick-tap-ms = <150>;
             hold-trigger-key-positions = <52 53 65 66 67 68 69 70 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 60 61 62 63 64 65 66 38>;
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <150>;
+        };
     };
 
     macros {
@@ -56,10 +67,10 @@
 
         default_layer {
             bindings = <
-&mt TILDE GRAVE  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3      &mt DOLLAR NUMBER_4  &mt PERCENT N5  &kp F11                                                                             &kp F12                        &mt CARET NUMBER_6  &mt AMPERSAND N7    &mt ASTERISK N8       &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &caps_word
-&kp TAB          &kp Q                     &kp W                 &kp E                  &kp R                &kp T           &mt LEFT_BRACE LEFT_BRACKET                                                         &mt RIGHT_BRACE RIGHT_BRACKET  &kp Y               &kp U               &kp I                 &kp O                    &kp P                     &kp BSLH
-&lt 1 ESC        &hml LEFT_GUI A           &hml LEFT_ALT S       &hml LEFT_CONTROL D    &hml LEFT_SHIFT F    &kp G           &kp MINUS                    &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &kp EQUAL                      &kp H               &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L          &mt COLON SEMICOLON       &kp SQT
-&kp LSHFT        &kp Z                     &kp X                 &kp C                  &kp V                &kp B                                                       &kp HOME      &kp PAGE_UP                                              &kp N               &kp M               &mt LESS_THAN COMMA   &mt GREATER_THAN PERIOD  &mt QUESTION SLASH        &kp RSHFT
+&ht TILDE GRAVE  &ht EXCLAMATION NUMBER_1  &ht AT_SIGN NUMBER_2  &ht HASH NUMBER_3      &ht DOLLAR NUMBER_4  &ht PERCENT N5  &kp F11                                                                             &kp F12                        &ht CARET NUMBER_6  &ht AMPERSAND N7    &ht ASTERISK N8       &ht LEFT_PARENTHESIS N9  &ht RIGHT_PARENTHESIS N0  &caps_word
+&kp TAB          &kp Q                     &kp W                 &kp E                  &kp R                &kp T           &ht LEFT_BRACE LEFT_BRACKET                                                         &ht RIGHT_BRACE RIGHT_BRACKET  &kp Y               &kp U               &kp I                 &kp O                    &kp P                     &ht BSLH PIPE
+&lt 1 ESC        &hml LEFT_GUI A           &hml LEFT_ALT S       &hml LEFT_CONTROL D    &hml LEFT_SHIFT F    &kp G           &ht MINUS UNDERSCORE         &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &ht EQUAL PLUS                 &kp H               &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L          &ht COLON SEMICOLON       &ht SQT DOUBLE_QUOTES
+&kp LSHFT        &kp Z                     &kp X                 &kp C                  &kp V                &kp B                                                       &kp HOME      &kp PAGE_UP                                              &kp N               &kp M               &ht LESS_THAN COMMA   &ht GREATER_THAN PERIOD  &ht QUESTION SLASH        &kp RSHFT
 &mo 1            &kp LEFT_WIN              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &tog 2                               &kp SPACE                    &kp BACKSPACE  &kp END       &kp PG_DN      &kp ENTER  &kp SPACE                                          &kp LEFT            &kp DOWN              &kp UP_ARROW             &kp RIGHT_ARROW           &mo 3
             >;
         };
@@ -70,17 +81,17 @@
 &trans    &kp PRINTSCREEN     &kp LG(UP_ARROW)    &kp LG(E)           &trans              &trans  &none                                                      &none    &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans              &trans
 &trans    &kp LG(LEFT)        &kp LG(DOWN_ARROW)  &kp LG(RIGHT)       &kp LS(LG(GRAVE))   &trans  &none       &trans             &trans      &trans  &trans  &none    &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
 &trans    &trans              &trans              &trans              &trans              &trans                                 &trans      &trans                   &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans              &trans
-&trans    &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp LS(BACKSPACE)  &trans      &trans  &trans  &trans                               &trans                      &trans                    &trans                       &trans              &trans
+&trans    &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp LC(BACKSPACE)  &trans      &trans  &trans  &trans                               &trans                      &trans                    &trans                       &trans              &trans
             >;
         };
 
         keypad {
             bindings = <
-&mt TILDE GRAVE  &kp N1        &kp N2                &kp N3                 &kp N4  &kp N5  &kp F11                                                                             &kp F12                        &kp N6  &kp KP_CLEAR     &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp MINUS
-&kp TAB          &kp Q         &kp W                 &kp E                  &kp R   &kp T   &mt LEFT_BRACE LEFT_BRACKET                                                         &mt RIGHT_BRACE RIGHT_BRACKET  &kp Y   &kp KP_N7        &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp BSLH
-&lt 1 ESCAPE     &kp A         &kp S                 &kp D                  &kp F   &kp G   &kp MINUS                    &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &kp EQUAL                      &kp H   &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &kp SQT
-&kp LSHFT        &kp Z         &kp X                 &kp C                  &kp V   &kp B                                               &kp HOME      &kp PG_UP                                                &kp N   &kp KP_N1        &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-&mo 1            &kp LEFT_WIN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &tog 2          &kp SPACE                    &kp BACKSPACE  &kp END       &kp PG_DN      &kp ENTER  &kp SPACE                              &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &mo 3
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_CLEAR     &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_N7        &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp KP_N1        &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &trans
+&trans  &trans  &trans  &trans  &tog 2          &trans  &trans  &trans      &trans  &trans  &trans          &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &trans
             >;
         };
 
