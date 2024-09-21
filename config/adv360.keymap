@@ -17,6 +17,13 @@
             bindings = <&kp RET>;
         };
 
+        easy_motion: easy_motion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp BSLH>;
+            label = "EASY_MOTION";
+        };
+
         #endif
 
         hml: hml {
@@ -62,16 +69,40 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <48 49>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <49 50>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <47 48>;
+        };
+
+        vimmotion {
+            bindings = <&easy_motion>;
+            key-positions = <65 70>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&ht TILDE GRAVE  &ht EXCLAMATION NUMBER_1  &ht AT_SIGN NUMBER_2  &ht HASH NUMBER_3      &ht DOLLAR NUMBER_4  &ht PERCENT N5  &kp F11                                                                             &kp F12                        &ht CARET NUMBER_6  &ht AMPERSAND N7    &ht ASTERISK N8       &ht LEFT_PARENTHESIS N9  &ht RIGHT_PARENTHESIS N0  &caps_word
-&kp TAB          &kp Q                     &kp W                 &kp E                  &kp R                &kp T           &ht LEFT_BRACE LEFT_BRACKET                                                         &ht RIGHT_BRACE RIGHT_BRACKET  &kp Y               &kp U               &kp I                 &kp O                    &kp P                     &ht PIPE NON_US_BACKSLASH
-&lt 1 ESC        &hml LEFT_GUI A           &hml LEFT_ALT S       &hml LEFT_CONTROL D    &hml LEFT_SHIFT F    &kp G           &ht UNDERSCORE MINUS         &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &ht PLUS EQUAL                 &kp H               &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L          &ht COLON SEMICOLON       &ht DOUBLE_QUOTES SQT
-&kp LSHFT        &kp Z                     &kp X                 &kp C                  &kp V                &kp B                                                       &kp HOME      &kp PAGE_UP                                              &kp N               &kp M               &ht LESS_THAN COMMA   &ht GREATER_THAN PERIOD  &ht QUESTION SLASH        &kp RSHFT
-&mo 1            &kp LEFT_WIN              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &tog 2                               &kp SPACE                    &kp BACKSPACE  &kp END       &kp PG_DN      &kp ENTER  &kp SPACE                                          &kp LEFT            &kp DOWN              &kp UP_ARROW             &kp RIGHT_ARROW           &mo 3
+&ht TILDE GRAVE  &ht EXCLAMATION NUMBER_1  &ht AT_SIGN NUMBER_2         &ht HASH NUMBER_3              &ht DOLLAR NUMBER_4  &ht PERCENT N5  &kp F11                                                                             &kp F12                        &ht CARET NUMBER_6  &ht AMPERSAND N7    &ht ASTERISK N8       &ht LEFT_PARENTHESIS N9  &ht RIGHT_PARENTHESIS N0  &ht UNDERSCORE MINUS
+&kp TAB          &kp Q                     &kp W                        &kp E                          &kp R                &kp T           &ht LEFT_BRACE LEFT_BRACKET                                                         &ht RIGHT_BRACE RIGHT_BRACKET  &kp Y               &kp U               &kp I                 &kp O                    &kp P                     &ht PIPE NON_US_BACKSLASH
+&lt 1 ESC        &hml LEFT_GUI A           &hml LEFT_ALT S              &hml LEFT_CONTROL D            &hml LEFT_SHIFT F    &kp G           &ht UNDERSCORE MINUS         &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &ht PLUS EQUAL                 &kp H               &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L          &ht COLON SEMICOLON       &ht DOUBLE_QUOTES SQT
+&kp LSHFT        &kp Z                     &kp X                        &kp C                          &kp V                &kp B                                                       &kp HOME      &kp PAGE_UP                                              &kp N               &kp M               &ht LESS_THAN COMMA   &ht GREATER_THAN PERIOD  &ht QUESTION SLASH        &kp RSHFT
+&mo 1            &kp LEFT_WIN              &ht LEFT_BRACE LEFT_BRACKET  &ht RIGHT_BRACE RIGHT_BRACKET  &tog 2                               &lt 2 SPACE                  &kp BACKSPACE  &kp END       &kp PG_DN      &kp ENTER  &kp SPACE                                          &kp LEFT            &kp DOWN              &kp UP_ARROW             &kp RIGHT_ARROW           &mo 3
             >;
         };
 
@@ -87,11 +118,11 @@
 
         keypad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_CLEAR     &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_N7        &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp KP_N1        &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &trans
-&trans  &trans  &trans  &trans  &tog 2          &trans  &trans  &trans      &trans  &trans  &trans          &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &trans
+&trans    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_CLEAR  &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &trans
+&trans    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp N7        &kp N8           &kp N9        &kp KP_MINUS  &trans
+&kp CLCK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp KP_PLUS   &trans
+&trans    &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp KP_ENTER  &trans
+&trans    &trans  &trans  &trans  &tog 2          &trans  &trans  &trans      &trans  &trans  &trans          &kp N0        &kp N0           &kp KP_DOT    &kp KP_ENTER  &trans
             >;
         };
 
