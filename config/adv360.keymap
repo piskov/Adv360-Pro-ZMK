@@ -17,16 +17,6 @@
             bindings = <&kp RET>;
         };
 
-        easy_mot: easy_mot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp NON_US_BACKSLASH &kp NON_US_BACKSLASH>;
-
-            label = "EASY_MOTION";
-        };
-
         #endif
 
         hml: hml {
@@ -88,11 +78,6 @@
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <47 48>;
-        };
-
-        vimmotion {
-            bindings = <&easy_mot>;
-            key-positions = <65 70>;
         };
     };
 
