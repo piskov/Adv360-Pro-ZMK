@@ -17,10 +17,10 @@
             bindings = <&kp RET>;
         };
 
-        easy_motion: easy_motion {
+        easy_mot: easy_mot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BSLH &kp BSLH>;
+            bindings = <&kp NON_US_BACKSLASH &kp NON_US_BACKSLASH>;
             label = "EASY_MOTION";
         };
 
@@ -88,7 +88,7 @@
         };
 
         vimmotion {
-            bindings = <&easy_motion>;
+            bindings = <&easy_mot>;
             key-positions = <65 70>;
         };
     };
