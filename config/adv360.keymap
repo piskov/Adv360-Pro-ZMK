@@ -20,7 +20,10 @@
         easy_mot: easy_mot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NON_US_BACKSLASH &kp NON_US_BACKSLASH>;
+            bindings =
+                <&macro_tap>,
+                <&kp NON_US_BACKSLASH &kp NON_US_BACKSLASH>;
+
             label = "EASY_MOTION";
         };
 
