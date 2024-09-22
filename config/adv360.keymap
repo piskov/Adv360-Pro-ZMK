@@ -100,31 +100,31 @@
 
         default_layer {
             bindings = <
-&ht TILDE GRAVE  &ht EXCLAMATION NUMBER_1  &ht AT_SIGN NUMBER_2  &ht HASH NUMBER_3    &ht DOLLAR NUMBER_4  &ht PERCENT N5    &none                                                                       &kp F12                    &ht CARET NUMBER_6  &ht AMPERSAND N7  &ht ASTERISK N8      &ht LEFT_PARENTHESIS N9      &ht RIGHT_PARENTHESIS N0       &ht UNDERSCORE MINUS
-&kp TAB          &kp Q                     &kp W                 &kp E                &kp R                &kp T             &none                                                                       &ht PIPE NON_US_BACKSLASH  &kp Y               &kp U             &kp I                &kp O                        &kp P                          &ht LEFT_BRACE LEFT_BRACKET
-&lt 1 ESC        &kp A                     &hml LEFT_ALT S       &hml LEFT_CONTROL D  &hml LEFT_SHIFT F    &hml RIGHT_ALT G  &ht UNDERSCORE MINUS  &kp LCTRL      &kp LALT      &kp LEFT_ALT  &kp RCTRL  &ht PLUS EQUAL             &kp H               &kp J             &kp K                &kp L                        &ht COLON SEMICOLON            &ht DOUBLE_QUOTES SQT
-&kp LSHFT        &kp Z                     &kp X                 &kp C                &kp V                &kp B                                                  &kp HOME      &kp PAGE_UP                                         &kp N               &kp M             &ht LESS_THAN COMMA  &ht GREATER_THAN PERIOD      &ht QUESTION SLASH             &kp RSHFT
-&tog 2           &kp LEFT_WIN              &caps_word            &kp LEFT             &kp RIGHT                              &lt 2 SPACE           &kp BACKSPACE  &kp END       &kp PG_DN     &kp ENTER  &lt 1 SPACE                                    &kp RIGHT_ALT     &kp UP_ARROW         &ht LEFT_BRACE LEFT_BRACKET  &ht RIGHT_BRACE RIGHT_BRACKET  &mo 3
+&ht TILDE GRAVE  &ht NUMBER_1 EXCLAMATION  &ht NUMBER_2 AT_SIGN  &ht NUMBER_3 HASH    &ht NUMBER_4 DOLLAR  &ht N5 PERCENT    &none                                                                       &kp F12         &ht NUMBER_6 LCTRL  &ht N7 AMPERSAND  &ht N8 ASTERISK              &ht N9 LEFT_PARENTHESIS        &ht N0 RIGHT_PARENTHESIS   &ht UNDERSCORE MINUS
+&kp TAB          &kp Q                     &kp W                 &kp E                &kp R                &kp T             &none                                                                       &none           &kp Y               &kp U             &kp I                        &kp O                          &kp P                      &ht LEFT_BRACE LEFT_BRACKET
+&lt 1 ESC        &hml LEFT_WIN A           &hml LEFT_ALT S       &hml LEFT_CONTROL D  &hml LEFT_SHIFT F    &hml RIGHT_ALT G  &ht UNDERSCORE MINUS  &kp LCTRL      &kp LALT      &kp LEFT_ALT  &kp RCTRL  &ht PLUS EQUAL  &kp H               &kp J             &kp K                        &kp L                          &ht COLON SEMICOLON        &ht DOUBLE_QUOTES SQT
+&kp LSHFT        &kp Z                     &kp X                 &kp C                &kp V                &kp B                                                  &kp HOME      &kp PAGE_UP                              &kp N               &kp M             &ht LESS_THAN COMMA          &ht GREATER_THAN PERIOD        &ht QUESTION SLASH         &kp RSHFT
+&tog 2           &kp LEFT_WIN              &caps_word            &kp LEFT             &kp RIGHT                              &lt 2 SPACE           &kp BACKSPACE  &kp END       &kp PG_DN     &kp ENTER  &lt 1 SPACE                         &kp RIGHT_ALT     &ht LEFT_BRACE LEFT_BRACKET  &ht RIGHT_BRACE RIGHT_BRACKET  &ht PIPE NON_US_BACKSLASH  &mo 3
             >;
         };
 
         fn {
             bindings = <
-&trans  &kp F1              &kp F2              &kp F3              &kp F4              &kp F5  &trans                                                     &kp F12  &kp F6                      &kp F7                      &kp F8                    &kp F9                       &kp F10             &kp F11
-&trans  &kp PRINTSCREEN     &kp LG(LS(GRAVE))   &kp LG(E)           &trans              &trans  &none                                                      &none    &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans              &trans
-&trans  &trans              &trans              &trans              &trans              &trans  &none       &trans             &trans      &trans  &trans  &none    &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
-&trans  &trans              &trans              &trans              &trans              &trans                                 &trans      &trans                   &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans              &trans
-&trans  &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp LC(BACKSPACE)  &trans      &trans  &trans  &trans                               &trans                      &trans                    &trans                       &trans              &trans
+&trans  &kp F1              &kp F2              &kp F3              &kp F4              &kp F5  &trans                                                     &trans  &kp F6                      &kp F7                      &kp F8                    &kp F9                       &kp F10             &kp F11
+&trans  &kp PRINTSCREEN     &kp LG(LS(GRAVE))   &kp LG(E)           &trans              &trans  &none                                                      &none   &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans              &trans
+&trans  &trans              &trans              &trans              &trans              &trans  &none       &trans             &trans      &trans  &trans  &none   &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
+&trans  &trans              &trans              &trans              &trans              &trans                                 &trans      &trans                  &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans              &trans
+&trans  &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp LC(BACKSPACE)  &trans      &trans  &trans  &trans                              &trans                      &trans                    &trans                       &trans              &trans
             >;
         };
 
         keypad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_CLEAR  &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp N7        &kp N8           &kp N9        &kp KP_MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp KP_PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp KP_ENTER  &trans
-&tog 2  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp N0        &kp N0           &kp KP_DOT    &kp KP_ENTER  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_CLEAR  &kp ASTERISK  &kp SLASH     &kp MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp N7        &kp N8        &kp N9        &kp MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER  &trans
+&tog 2  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp N0        &kp N0        &kp KP_DOT    &kp KP_ENTER  &trans
             >;
         };
 
