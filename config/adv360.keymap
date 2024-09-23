@@ -100,7 +100,7 @@
 
         default_layer {
             bindings = <
-&ht TILDE GRAVE  &ht NUMBER_1 EXCLAMATION  &ht NUMBER_2 AT_SIGN  &ht NUMBER_3 HASH    &ht NUMBER_4 DOLLAR  &ht N5 PERCENT    &none                                                                       &kp F12         &ht NUMBER_6 LCTRL  &ht N7 AMPERSAND    &ht N8 ASTERISK              &ht N9 LEFT_PARENTHESIS        &ht N0 RIGHT_PARENTHESIS   &ht UNDERSCORE MINUS
+&ht TILDE GRAVE  &ht EXCLAMATION NUMBER_1  &ht AT_SIGN NUMBER_2  &ht HASH NUMBER_3    &ht DOLLAR NUMBER_4  &ht PERCENT N5    &none                                                                       &kp F12         &ht CARET NUMBER_6  &ht AMPERSAND N7    &ht ASTERISK N8              &ht LEFT_PARENTHESIS N9        &ht RIGHT_PARENTHESIS N0   &ht UNDERSCORE MINUS
 &kp TAB          &kp Q                     &kp W                 &kp E                &kp R                &kp T             &none                                                                       &none           &kp Y               &kp U               &kp I                        &kp O                          &kp P                      &ht LEFT_BRACE LEFT_BRACKET
 &lt 1 ESC        &hml LEFT_WIN A           &hml LEFT_ALT S       &hml LEFT_CONTROL D  &hml LEFT_SHIFT F    &hml RIGHT_ALT G  &ht UNDERSCORE MINUS  &kp LCTRL      &kp LALT      &kp LEFT_ALT  &kp RCTRL  &ht PLUS EQUAL  &hmr RIGHT_ALT H    &hmr RIGHT_SHIFT J  &hmr LEFT_CONTROL K          &hmr LEFT_ALT L                &ht COLON SEMICOLON        &ht DOUBLE_QUOTES SQT
 &kp LSHFT        &kp Z                     &kp X                 &kp C                &kp V                &kp B                                                  &kp HOME      &kp PAGE_UP                              &kp N               &kp M               &ht LESS_THAN COMMA          &ht GREATER_THAN PERIOD        &ht QUESTION SLASH         &kp RSHFT
@@ -120,7 +120,7 @@
 
         keypad {
             bindings = <
-&trans        &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_CLEAR  &kp ASTERISK  &kp SLASH     &kp MINUS     &trans
+&trans        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &trans  &kp KP_CLEAR  &kp ASTERISK  &kp SLASH     &kp MINUS     &trans
 &trans        &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp N7        &kp N8        &kp N9        &kp MINUS     &trans
 &kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp EQUAL
 &trans        &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER  &trans
