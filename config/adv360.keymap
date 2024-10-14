@@ -110,11 +110,11 @@
 
         fn {
             bindings = <
-&trans  &kp F1              &kp F2              &kp F3              &kp F4              &kp F5  &trans                                                     &trans  &kp F6                      &kp F7                      &kp F8                    &kp F9                       &kp F10             &kp F11
-&trans  &kp PRINTSCREEN     &kp LG(LS(GRAVE))   &kp LG(E)           &trans              &trans  &none                                                      &none   &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans              &trans
-&trans  &trans              &trans              &trans              &trans              &trans  &none       &trans             &trans      &trans  &trans  &none   &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
-&trans  &trans              &trans              &trans              &trans              &trans                                 &trans      &trans                  &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans              &trans
-&trans  &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp LC(BACKSPACE)  &trans      &trans  &trans  &trans                              &trans                      &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS        &trans              &trans
+&trans  &kp F1              &kp F2              &kp F3              &kp F4              &kp F5  &trans                                                     &trans  &kp F6                      &kp F7                      &kp F8                    &kp F9                       &kp F10                &kp F11
+&trans  &kp PRINTSCREEN     &kp LG(LS(GRAVE))   &kp LG(E)           &trans              &trans  &none                                                      &none   &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans                 &trans
+&trans  &trans              &trans              &trans              &trans              &trans  &none       &trans             &trans      &trans  &trans  &none   &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)     &kp LC(RIGHT_ARROW)
+&trans  &trans              &trans              &trans              &trans              &trans                                 &trans      &trans                  &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans                 &trans
+&trans  &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp LC(BACKSPACE)  &trans      &trans  &trans  &trans                              &kp LEFT_PARENTHESIS        &kp LBRC                  &kp RBRC                     &kp RIGHT_PARENTHESIS  &trans
             >;
         };
 
