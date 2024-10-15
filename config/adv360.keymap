@@ -23,27 +23,27 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick_tap_ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 35 36 37 52 65 66 67>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
         };
 
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick_tap_ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             hold-trigger-key-positions = <52 53 65 66 67 68 69 70 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 60 61 62 63 64 65 66 38>;
         };
 
@@ -110,11 +110,11 @@
 
         fn {
             bindings = <
-&trans  &kp F1              &kp F2              &kp F3              &kp F4              &kp F5  &trans                                          &trans  &kp F6                      &kp F7                      &kp F8                    &kp F9                       &kp F10                &kp F11
-&trans  &kp PRINTSCREEN     &kp LG(LS(GRAVE))   &kp LG(E)           &trans              &trans  &none                                           &none   &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans                 &trans
-&trans  &trans              &trans              &trans              &trans              &trans  &none   &trans      &trans      &trans  &trans  &none   &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)     &kp LC(RIGHT_ARROW)
-&trans  &trans              &trans              &trans              &trans              &trans                      &trans      &trans                  &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans                 &trans
-&trans  &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &trans  &kp DELETE  &trans      &trans  &trans  &trans                              &kp LEFT_PARENTHESIS        &kp LBRC                  &kp RBRC                     &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp F1              &kp F2              &kp F3              &kp F4              &kp F5  &trans                                              &trans  &kp F6                      &kp F7                      &kp F8                    &kp F9                       &kp F10                &kp F11
+&trans  &kp PRINTSCREEN     &kp LG(LS(GRAVE))   &kp LG(E)           &trans              &trans  &none                                               &none   &kp HOME                    &kp LC(HOME)                &kp LC(END)               &kp END                      &trans                 &trans
+&trans  &trans              &trans              &trans              &trans              &trans  &none       &trans      &trans      &trans  &trans  &none   &kp LEFT_ARROW              &kp DOWN_ARROW              &kp UP_ARROW              &kp RIGHT_ARROW              &kp LC(LEFT_ARROW)     &kp LC(RIGHT_ARROW)
+&trans  &trans              &trans              &trans              &trans              &trans                          &trans      &trans                  &kp LS(LC(LA(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LS(LC(LA(UP_ARROW)))  &kp LS(LC(LA(RIGHT_ARROW)))  &trans                 &trans
+&trans  &kp LS(LC(LA(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LA(LS(LC(F4)))          &kp DELETE  &kp DELETE  &trans      &trans  &trans  &trans                              &kp LEFT_PARENTHESIS        &kp LBRC                  &kp RBRC                     &kp RIGHT_PARENTHESIS  &trans
             >;
         };
 
